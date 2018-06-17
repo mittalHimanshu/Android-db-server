@@ -11,7 +11,7 @@ The validation response comes directly from the server and displayed in app.
 ```
 1. It is mandatory for a user to fill all the fields.
 2. A user needs to set a unique username for its registration.
-3. If a user does not enter phone no. according to Indian Standards i.e. 10 digits and starting with either 7 or 8 or 9.
+3. A user needs to enter a phone no. according to Indian Standards i.e. 10 digits and starting with either 7 or 8 or 9.
 4. A user needs to enter a valid email address.
 5. Only a registered user can Login with its unique username and password.
 6. If a user enters a wrong username then a toast will appear saying "No Username Found".
