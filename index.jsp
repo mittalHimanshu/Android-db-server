@@ -10,14 +10,14 @@
             try{
             Class.forName("com.mysql.jdbc.Driver");
             java.sql.Connection c;
-            c = DriverManager.getConnection("jdbc:mysql://phpmyadmin.c77ijweuz2wx.us-east-2.rds.amazonaws.com:3306/users", "phpMyAdmin",  "phpmyadmin");
+            c = DriverManager.getConnection("jdbc:mysql://sql7.freemysqlhosting.net:3306/sql7236208", "sql7236208", "R5kkHabXDs");
             Statement s = c.createStatement();         
             String username = request.getParameter("username");
             String name = request.getParameter("name");
             String password = request.getParameter("password");
             String email = request.getParameter("email");
             String phone = request.getParameter("phone");
-            String sql = "SELECT * from android where username = '"+username+"' ";
+            String sql = "SELECT * from androidServer where username = '"+username+"' ";
             ResultSet rs = s.executeQuery(sql);
             if(username.equals("") || name.equals("") || password.equals("") || email.equals("") || phone.equals("")){
                 response.getWriter().append("emptyfields");
@@ -25,14 +25,14 @@
             else if(rs.next()){
                 response.getWriter().append("false");
                 }
-            else if(!phone.matches("(7|8|9)\\d{9}")){
-                response.getWriter().append("phoneerror");
-            }
             else if(!email.matches("[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}")){
                 response.getWriter().append("emailerror");
             }
+            else if(!phone.matches("(7|8|9)\\d{9}")){
+                response.getWriter().append("phoneerror");
+            }
             else{              
-                PreparedStatement ps = c.prepareStatement("insert into android values (?, ?, ?, ?, ?)");
+                PreparedStatement ps = c.prepareStatement("insert into androidServer values (?, ?, ?, ?, ?)");
                 ps.setString(1, username);
                 ps.setString(2, name);
                 ps.setString(3, password);
@@ -49,11 +49,11 @@
             try{
                 Class.forName("com.mysql.jdbc.Driver");
                 java.sql.Connection c;
-                c = DriverManager.getConnection("jdbc:mysql://phpmyadmin.c77ijweuz2wx.us-east-2.rds.amazonaws.com:3306/users", "phpMyAdmin",  "phpmyadmin");
+                c = DriverManager.getConnection("jdbc:mysql://sql7.freemysqlhosting.net:3306/sql7236208", "sql7236208", "R5kkHabXDs");
                 Statement s = c.createStatement();    
                 String username = request.getParameter("username");
                 String password = request.getParameter("password");
-                String sql = "SELECT * from android where username = '"+username+"' ";
+                String sql = "SELECT * from androidServer where username = '"+username+"' ";
                 ResultSet rs = s.executeQuery(sql);
                 if(rs.next()){
                     String pass = rs.getString("password");
