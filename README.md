@@ -4,7 +4,7 @@
 
 In this project a validation on a form is performed in an android app.
 
-The validation response comes directly from the server and displayed in app.
+The validation response comes directly from the server and displayed in the app.
 
 # Features
 
