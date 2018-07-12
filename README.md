@@ -23,8 +23,8 @@ No hardcoded validations are used inside app for `Security Purpose` as validatio
 
 <p float="left">
 <img src="https://mittalhimanshu151.000webhostapp.com/Images/MyNotes%20App/1.png" width="280" height="500" hspace="4"/>
-<img src="https://mittalhimanshu151.000webhostapp.com/Images/MyNotes%20App/2.png" height="500" hspace="4"/>
-<img src="https://mittalhimanshu151.000webhostapp.com/Images/MyNotes%20App/3.png" height="500" hspace="4"/>
+<img src="https://mittalhimanshu151.000webhostapp.com/Images/MyNotes%20App/2.png" width="280" height="500" hspace="4"/>
+<img src="https://mittalhimanshu151.000webhostapp.com/Images/MyNotes%20App/3.png" width="280" height="500" hspace="4"/>
 </p>
 <p float="left">
 <img src="https://mittalhimanshu151.000webhostapp.com/Images/MyNotes%20App/4.png" width="280" height="500" hspace="4"/>
